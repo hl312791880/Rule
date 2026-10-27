@@ -1,19 +1,37 @@
 payload:
+  # 关键词匹配：所有含 siri 的域名（Siri 相关请求）
   - DOMAIN-KEYWORD,siri
+  # 苹果内容分发 CDN（应用与媒体资源）
   - DOMAIN-SUFFIX,apps.mzstatic.com
+  # iCloud 专用代理入口（Private Relay，QUIC 通道）
   - DOMAIN-SUFFIX,mask.icloud.com
+  # iCloud 专用代理入口（HTTP/2 通道）
   - DOMAIN-SUFFIX,mask-h2.icloud.com
+  # 苹果定位服务域名
   - DOMAIN-SUFFIX,ls.apple.com
+  # iCloud 网关（Apple Intelligence 云端请求经此接入）
   - DOMAIN-SUFFIX,gateway.icloud.com
+  # 定位服务 SSL 接口（GeoServices 地理服务）
   - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+  # 专用代理节点（Cloudflare 承运）
   - DOMAIN-SUFFIX,cp4.cloudflare.com
+  # 专用代理中继主机名（apple-dns 侧）
   - DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+  # 专用代理中继（Fastly 承运；原文拼写为 tastly，官方域名应为 fastly-edge）
   - DOMAIN-SUFFIX,apple-relay.tastly-edge.com
+  # 专用代理中继（Cloudflare 承运）
   - DOMAIN-SUFFIX,apple-relay.cloudflare.com
+  # 专用代理中继（苹果自营）
   - DOMAIN-SUFFIX,apple-relay.apple.com
+  # Siri 语音与智能处理后端
   - DOMAIN-SUFFIX,smoot.apple.com
+  # 专用代理 DNS 主机名（mask.icloud.com 的解析目标）
   - DOMAIN,mask.apple-dns.net
+  # 专用代理 DNS 测试主机名
   - DOMAIN,mask-t.apple-dns.net
+  # 专用代理 API 接口（iCloud 侧）
   - DOMAIN,mask-api.icloud.com
+  # 专用代理 API 接口（apple-dns 侧）
   - DOMAIN,mask-api.fe.apple-dns.net
+  # Siri 后端服务器
   - DOMAIN,guzzoni.apple.com
