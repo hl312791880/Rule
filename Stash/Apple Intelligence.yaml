@@ -17,8 +17,8 @@ payload:
   - DOMAIN-SUFFIX,cp4.cloudflare.com
   # 专用代理中继主机名（apple-dns 侧）
   - DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-  # 专用代理中继（Fastly 承运；原文拼写为 tastly，官方域名应为 fastly-edge）
-  - DOMAIN-SUFFIX,apple-relay.tastly-edge.com
+  # 专用代理中继（Fastly 承运）
+  - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
   # 专用代理中继（Cloudflare 承运）
   - DOMAIN-SUFFIX,apple-relay.cloudflare.com
   # 专用代理中继（苹果自营）
