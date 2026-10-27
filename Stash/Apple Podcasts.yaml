@@ -11,5 +11,5 @@ payload:
   - DOMAIN-SUFFIX,mzstatic.com
   # 节目托管平台 SoundOn（RSS 与音频）
   - DOMAIN-SUFFIX,soundon.fm
-  # 不明白播客官网（节目 RSS 与音频）
-  - DOMAIN-SUFFIX,bumingbai.net
+  # 节目托管平台 Acast（RSS 与音频，含 feeds.acast.com）
+  - DOMAIN-SUFFIX,acast.com
