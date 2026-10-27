@@ -9,3 +9,7 @@ payload:
   - DOMAIN-SUFFIX,itunes.apple.com
   # 苹果媒体封面图床（所有苹果媒体共用）
   - DOMAIN-SUFFIX,mzstatic.com
+  # 节目托管平台 SoundOn（RSS 与音频）
+  - DOMAIN-SUFFIX,soundon.fm
+  # 不明白播客官网（节目 RSS 与音频）
+  - DOMAIN-SUFFIX,bumingbai.net
