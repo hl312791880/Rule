@@ -1,0 +1,7 @@
+payload:
+  # Apple Podcasts 主站（目录 / 搜索 / 订阅 / 节目页）
+  - DOMAIN-SUFFIX,podcasts.apple.com
+  # Apple Podcasts 官方短链域名
+  - DOMAIN-SUFFIX,applepodcasts.com
+  # Apple Podcasts 目录数据 API（已被上一条 SUFFIX 覆盖，单列备查）
+  - DOMAIN,amp-api.podcasts.apple.com
