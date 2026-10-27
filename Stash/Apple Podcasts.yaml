@@ -3,5 +3,9 @@ payload:
   - DOMAIN-SUFFIX,podcasts.apple.com
   # Apple Podcasts 官方短链域名
   - DOMAIN-SUFFIX,applepodcasts.com
-  # Apple Podcasts 目录数据 API（已被上一条 SUFFIX 覆盖，单列备查）
+  # Apple Podcasts 目录数据 API（已被第一条 SUFFIX 覆盖，单列备查）
   - DOMAIN,amp-api.podcasts.apple.com
+  # iTunes 目录 / 订阅接口（会顺带 iTunes 商店流量）
+  - DOMAIN-SUFFIX,itunes.apple.com
+  # 苹果媒体封面图床（所有苹果媒体共用）
+  - DOMAIN-SUFFIX,mzstatic.com
