@@ -1,0 +1,11 @@
+payload:
+  # Muse 主站（网页版 / 官网 / 介绍页 introducing.muse.ai）
+  - DOMAIN-SUFFIX,muse.ai
+  # Meta AI 与 Model API（api.meta.ai，Muse Spark 开发者接口）
+  - DOMAIN-SUFFIX,meta.ai
+  # Muse Mac 版下载页
+  - DOMAIN,ai.meta.com
+  # Muse 实时连接（Hatch / Secure VM，hatch.metaaivm.com 的加密 WebSocket）
+  - DOMAIN-SUFFIX,metaaivm.com
+  # Muse 分享页与用户内容（cf.metaaiusercontent.com）
+  - DOMAIN-SUFFIX,metaaiusercontent.com
