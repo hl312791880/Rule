@@ -1,37 +1,37 @@
 payload:
-  # Siri 后端服务器（Siri 与听写请求）
-  - DOMAIN,guzzoni.apple.com
-  # 搜索服务后端（Siri、聚焦、查询、Safari、新闻、信息、音乐）
-  - DOMAIN-SUFFIX,smoot.apple.com
-  # Siri 联网搜索接口（searchtoold 生产环境，天气/新闻/知识问答）
-  - DOMAIN,api-siri-prod.apple.com
-  # Siri 种子服务（测试/预发布通道）
-  - DOMAIN,seed.siri.apple.com
-  # Apple Intelligence 扩展中继（苹果自营）
-  - DOMAIN,apple-relay.apple.com
-  # 私有云计算 PCC 中继（Cloudflare 承运）
-  - DOMAIN,apple-relay.cloudflare.com
-  # 私有云计算 PCC 中继（Fastly 承运）
-  - DOMAIN,apple-relay.fastly-edge.com
-  # 私有云计算 PCC 节点（Cloudflare 承运）
-  - DOMAIN,cp4.cloudflare.com
+  # 关键词匹配：所有含 siri 的域名（Siri 相关请求）
+  - DOMAIN-KEYWORD,siri
+  # 苹果内容分发 CDN（应用与媒体资源）
+  - DOMAIN-SUFFIX,apps.mzstatic.com
+  # iCloud 专用代理入口（Private Relay，QUIC 通道）
+  - DOMAIN-SUFFIX,mask.icloud.com
+  # iCloud 专用代理入口（HTTP/2 通道）
+  - DOMAIN-SUFFIX,mask-h2.icloud.com
+  # 苹果定位服务域名
+  - DOMAIN-SUFFIX,ls.apple.com
+  # iCloud 网关（Apple Intelligence 云端请求经此接入）
+  - DOMAIN-SUFFIX,gateway.icloud.com
+  # 定位服务 SSL 接口（GeoServices 地理服务）
+  - DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+  # 专用代理节点（Cloudflare 承运）
+  - DOMAIN-SUFFIX,cp4.cloudflare.com
   # 专用代理中继主机名（apple-dns 侧）
-  - DOMAIN,apple-relay.mask.apple-dns.net
+  - DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
+  # 专用代理中继（Fastly 承运）
+  - DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+  # 专用代理中继（Cloudflare 承运）
+  - DOMAIN-SUFFIX,apple-relay.cloudflare.com
+  # 专用代理中继（苹果自营）
+  - DOMAIN-SUFFIX,apple-relay.apple.com
+  # Siri 语音与智能处理后端
+  - DOMAIN-SUFFIX,smoot.apple.com
+  # 专用代理 DNS 主机名（mask.icloud.com 的解析目标）
+  - DOMAIN,mask.apple-dns.net
+  # 专用代理 DNS 测试主机名
+  - DOMAIN,mask-t.apple-dns.net
   # 专用代理 API 接口（iCloud 侧）
   - DOMAIN,mask-api.icloud.com
-  # 专用代理 API 接口（apple-dns 侧，fe2 入口）
-  - DOMAIN,mask-api.fe2.apple-dns.net
-  # 专用代理中继（Akamai 承运）
-  - DOMAIN,apple-relay.akamaized.net
-  # 私有云计算 PCC 承运中继（Cloudflare，carry 通道）
-  - DOMAIN,apple-carry-relay.cloudflare.com
-  # 定位服务 SSL 接口（GeoServices 地理服务）
-  - DOMAIN,gspe1-ssl.ls.apple.com
-  # iCloud 网关（Apple Intelligence 云端请求经此接入）
-  - DOMAIN,gateway.icloud.com
-  # iCloud 连通性探测端点
-  - DOMAIN,probe.icloud.com
-  # iCloud 指标上报（服务遥测统计）
-  - DOMAIN,metrics.icloud.com
-  # Wi-Fi 定位辅助服务（WPS）
-  - DOMAIN,wps.apple.com
+  # 专用代理 API 接口（apple-dns 侧）
+  - DOMAIN,mask-api.fe.apple-dns.net
+  # Siri 后端服务器
+  - DOMAIN,guzzoni.apple.com
